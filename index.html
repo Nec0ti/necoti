@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Counter Game</title>
+    <title>Necoti's GitHub Projects</title>
     <style>
         body {
             text-align: center;
-            padding: 50px;
             font-family: Arial, sans-serif;
+            background-color: rgb(14, 14, 14);
+            padding: 20px;
         }
-        #clickCount {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
+        h1 {
+            color: #333;
         }
-        #clickButton {
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .button {
             padding: 10px 20px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
+            background-color: #606e77;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Click Counter Game</h1>
-    <p id="clickCount">Click Counter: <span id="count">0</span></p>
-    <button id="clickButton" onclick="increaseCount()">Click!</button>
+    <h1>Necoti's GitHub Projects</h1>
 
-    <script>
-        var clickCount = 0;
+    <div class="button-container">
+        <a class="button" href="link1">Buton 1</a>
+        <a class="button" href="link2">Buton 2</a>
+    </div>
 
-        function increaseCount() {
-            clickCount++;
-            document.getElementById("count").innerText = clickCount;
-        }
-    </script>
+    <div class="image-container">
+        <img src="image1.jpg" alt="Resim 1">
+        <img src="image2.jpg" alt="Resim 2">
+    </div>
 </body>
 </html>
