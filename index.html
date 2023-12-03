@@ -3,53 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Necoti's GitHub Projects</title>
+    <title>Necoti's Github Projects</title>
     <style>
         body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: rgb(14, 14, 14);
+            padding: 1em;
+        }
+
+        main {
             padding: 20px;
         }
-        h1 {
-            color: #333;
-        }
-        .button-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #606e77;
-            color: #fff;
-            border: none;
+
+        .game-card {
+            background-color: #333;
             border-radius: 5px;
-            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            overflow: hidden;
         }
-        .image-container {
-            margin-top: 20px;
-        }
-        img {
+
+        .game-image {
             width: 100%;
-            max-width: 400px;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .game-details {
+            padding: 20px;
+        }
+
+        .game-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .game-description {
+            color: #bbb;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Necoti's GitHub Projects</h1>
+    <header>
+        <h1>Necoti's Github Projects</h1>
+    </header>
 
-    <div class="button-container">
-        <a class="button" href="link1">Buton 1</a>
-        <a class="button" href="link2">Buton 2</a>
-    </div>
+    <main>
+        <div class="game-card">
+            <img src="game1.jpg" alt="Game 1" class="game-image">
+            <div class="game-details">
+                <h2 class="game-title">Game 1</h2>
+                <p class="game-description">This game is an amazing experience. Don't miss it!</p>
+                <a href="download-link" class="download-button">Download</a>
+            </div>
+        </div>
 
-    <div class="image-container">
-        <img src="image1.jpg" alt="Resim 1">
-        <img src="image2.jpg" alt="Resim 2">
-    </div>
+        <div class="game-card">
+            <img src="game2.jpg" alt="Game 2" class="game-image">
+            <div class="game-details">
+                <h2 class="game-title">Game 2</h2>
+                <p class="game-description">Addictive gameplay and stunning graphics. Must play!</p>
+                <a href="download-link" class="download-button">Download</a>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
