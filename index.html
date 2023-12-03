@@ -1,13 +1,39 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Necoti</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum totam provident reprehenderit obcaecati nobis cumque mollitia quidem sapiente eligendi nihil corrupti laboriosam maiores similique, quam soluta quasi, consectetur, quisquam est!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum totam provident reprehenderit obcaecati nobis cumque mollitia quidem sapiente eligendi nihil corrupti laboriosam maiores similique, quam soluta quasi, consectetur, quisquam est!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum totam provident reprehenderit obcaecati nobis cumque mollitia quidem sapiente eligendi nihil corrupti laboriosam maiores similique, quam soluta quasi, consectetur, quisquam est!</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tıklama Sayacı Oyunu</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+        #clickCount {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #clickButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tıklama Sayacı Oyunu</h1>
+    <p id="clickCount">Tıklama Sayısı: <span id="count">0</span></p>
+    <button id="clickButton" onclick="increaseCount()">Tıkla!</button>
+
+    <script>
+        var clickCount = 0;
+
+        function increaseCount() {
+            clickCount++;
+            document.getElementById("count").innerText = clickCount;
+        }
+    </script>
+</body>
 </html>
